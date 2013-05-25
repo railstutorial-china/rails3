@@ -549,6 +549,10 @@ body {
     background: #ccc url("../images/noise-wall.jpg") repeat left top;
 }
 
+a {
+  color: #D14;
+}
+
 .wrapper {
     margin: 30px auto;
     width: 800px;
