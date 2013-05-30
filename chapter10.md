@@ -1758,7 +1758,7 @@ end
 current_user.microposts.find_by_id(params[:id])
 ```
 
-这行代码可以自行确保只在当前用户发布的微博中查询。这里，我们使用的是 `find_by_id`，而没用 `find`，因为如果没有找到微博 `find` 会抛出异常，而不会返回 `nil`。顺便说一下，如果你习惯处理 Ruby 异常，也可以按照下面的方式定义 `current_user` 过滤器：
+这行代码可以自行确保只在当前用户发布的微博中查询。这里，我们使用的是 `find_by_id`，而没用 `find`，因为如果没有找到微博 `find` 会抛出异常，而不会返回 `nil`。顺便说一下，如果你习惯处理 Ruby 异常，也可以按照下面的方式定义 `correct_user` 过滤器：
 
 ```ruby
 def correct_user
