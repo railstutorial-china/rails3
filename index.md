@@ -16,14 +16,25 @@ layout: default
 		<dt>Rails：</dt>
 		<dd>3.2.13</dd>
 		<dt>售价：</dt>
-		<dd>￥9.90</dd>
+		<dd>$4.90</dd>
 		<dt>页数：</dt>
 		<dd>460</dd>
 		<dt>装帧：</dt>
 		<dd>电子书</dd>
 		<dt>格式：</dt>
-		<dd>HTML</dd>
+		<dd>PDF, ePub, Mobi, HTML</dd>
 	</dl>
+
+	<div class="buy">
+		<h3>购买电子书</h3>
+		<p><a class="btn" href="https://sellfy.com/p/qwyU/" title="购买电子书">购买电子书（$4.90）</a></p>
+		<ol class="notes">
+			<li>出售行为已获原作者许可；</li>
+			<li>只支持 Paypal 支付；</li>
+			<li>电子书包含三种格式：PDF、EPub 和 Mobi；</li>
+			<li>如果你的 Kindle 安装了多看系统，建议购买 ePub 格式；</li>
+		</ol>
+	</div>
 
 </div>
 

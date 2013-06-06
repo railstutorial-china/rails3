@@ -623,29 +623,25 @@ a {
 .buy {
   margin: 30px 0;
 }
-.buy ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.buy ul li {
-  display: block;
-  float: left;
-  margin-right: 10px;
-}
-.btn {
+a.btn {
   border: 1px solid #DEA620;
   border-radius: 4px;
   background: #FF0;
   background-repeat: repeat-x;
   background-image: -webkit-linear-gradient(top, #F4CF2D, #EDBF13);
+  background: -moz-linear-gradient(top, #F4CF2D 0%, #EDBF13 100%);
   color: #444;
   line-height: 36px;
   padding: 5px 10px;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255,255,0,.5);
   -webkit-box-shadow: 0 2px 0 #AC7B2D;
+  -moz-box-shadow: 0 2px 0 #AC7B2D;
+  box-shadow: 0 2px 0 #AC7B2D;
+}
+a.btn:hover, a.btn:active {
+  background-image: -webkit-linear-gradient(top, #EDBF13, #F4CF2D);
+  background: -moz-linear-gradient(top, #EDBF13 0%, #F4CF2D 100%);
 }
 .buy .notes {
   color: #888;
