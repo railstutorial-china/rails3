@@ -32,7 +32,7 @@ layout: default
 			<li>出售行为已获原作者许可；</li>
 			<li>只支持 Paypal 支付；</li>
 			<li>电子书包含三种格式：PDF、EPub 和 Mobi；</li>
-			<li>如果你的 Kindle 安装了多看系统，建议购买 ePub 格式；</li>
+			<li>购买后，错误修正等更新免费获取（通过邮件通知），不再收费；</li>
 		</ol>
 	</div>
 
