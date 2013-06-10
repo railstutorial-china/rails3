@@ -272,7 +272,7 @@ describe Relationship do
 end
 ```
 
-**列表 11.8** 添加 Relationship 模型数据验证<br />`app/models/relationship.rb`
+**代码 11.8** 添加 Relationship 模型数据验证<br />`app/models/relationship.rb`
 
 ```ruby
 class Relationship < ActiveRecord::Base
@@ -291,7 +291,7 @@ end
 
 下面到了 Relationship 关联关系的核心部分了，获取 `followed_users` 和 `followers`。 我们首先从 `followed_users` 开始，测试如代码 11.9 所示。
 
-**列表 11.9** 测试 `user.followed_users` 属性<br />`spec/models/user_spec.rb`
+**代码 11.9** 测试 `user.followed_users` 属性<br />`spec/models/user_spec.rb`
 
 ```ruby
 require 'spec_helper'
@@ -316,7 +316,7 @@ has_many :followeds, through: :relationships
 
 会使用 `relationships` 表中的 `followed_id` 列生成一个数组。但是，正如在 [11.1.1 节](#sec-11-1-1)中说过的，`user.followeds` 这种说法比较蹩脚，若使用“followed users”作为 “followed”的复数形式会好得多，那么被关注的用户数组就要写成 `user.followed_users` 了。Rails 当然会允许我们重写默认的设置，针对本例，我们可以使用 `:source` 参数，告知 Rails `followed_users` 数组的来源是 `followed` 所代表的 id 集合。
 
-**列表 11.10** 在 User 模型中添加 `followed_users` 关联<br />`app/models/user.rb`
+**代码 11.10** 在 User 模型中添加 `followed_users` 关联<br />`app/models/user.rb`
 
 ```ruby
 class User < ActiveRecord::Base
@@ -334,7 +334,7 @@ end
 
 为了创建关注关联关系，我们将定义一个名为 `follow!` 的方法，这样我们就能使用 `user.follow!(other_user)` 这样的代码创建关注了。（`follow!` 方法应该与 `create!` 和 `save!` 方法一样，失败时抛出异常，所以我们在后面加上了感叹号。）对应地，我们还会添加一个 `following?` 布尔值方法，检查一个用户是否关注了另一个用户。<sup>[7](#fn-7)</sup>代码 11.11 中的测试表明了我们希望如何使用这两个方法。
 
-**列表 11.11** 测试关注关系用到的方法<br />`spec/models/user_spec.rb`
+**代码 11.11** 测试关注关系用到的方法<br />`spec/models/user_spec.rb`
 
 ```ruby
 require 'spec_helper'
@@ -350,14 +350,15 @@ describe User do
   .
   .
   describe "following" do
-  let(:other_user) { FactoryGirl.create(:user) }
-  before do
-    @user.save
-    @user.follow!(other_user)
-  end
+    let(:other_user) { FactoryGirl.create(:user) }
+    before do
+      @user.save
+      @user.follow!(other_user)
+    end
 
-  it { should be_following(other_user) }
-  its(:followed_users) { should include(other_user) } end
+    it { should be_following(other_user) }
+    its(:followed_users) { should include(other_user) }
+  end
 end
 ```
 
@@ -495,7 +496,7 @@ describe User do
 
     describe "followed user" do
       subject { other_user }
-    its(:followers) { should include(@user) }
+      its(:followers) { should include(@user) }
     end
     .
     .
@@ -533,8 +534,8 @@ class User < ActiveRecord::Base
   .
   .
   has_many :reverse_relationships, foreign_key: "followed_id",
-    class_name: "Relationship",
-    dependent: :destroy
+                                   class_name:  "Relationship",
+                                   dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
   .
   .
