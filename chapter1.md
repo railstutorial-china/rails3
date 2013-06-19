@@ -46,7 +46,7 @@ Rails 还会快速跟进 Web 领域最新的技术和框架架构技术。例如
 
 **经验丰富的 Web 开发者，但是刚接触 Rails：**你有很好的基础了，如果你曾经使用过 PHP 或 Python（更好）这些动态语言就更好了。我们要讲的基础都是一致的，但是你可能对 TDD 还有 Rails 采用的 REST 架构感到陌生。而且 Ruby 语言有自己的风格，这一点对你来说也是陌生的。
 
-**经验丰富的 Ruby 程序员：**如今 Ruby 程序员不懂 Rails 的很少，如果你是这种情况，可以快速的过一遍本书，然后接着阅读 Obie Fernandez 的《[Ruby 之道](http://www.amazon.com/gp/product/0321601661)》（译者注：[豆瓣](http://book.douban.com/subject/1906854/)，[中文版](http://book.douban.com/subject/2280936/)）。
+**经验丰富的 Ruby 程序员：**如今 Ruby 程序员不懂 Rails 的很少，如果你是这种情况，可以快速的过一遍本书，然后接着阅读 Obie Fernandez 的《[Rails 3 之道](http://www.amazon.com/gp/product/0321601661)》（译者注：[豆瓣](http://book.douban.com/subject/1906854/)，[中文版](http://book.douban.com/subject/2280936/)）。
 
 **缺乏经验的 Rails 程序员：**你或许阅读过其他的 Rails 教程，也开发过小型的 Rails 程序。根据一些读者的反馈，本书还是会给你带来帮助，别的不说，单就时效性而言，本书会比你当初学习 Rails 使用的教程要更新一些。
 
