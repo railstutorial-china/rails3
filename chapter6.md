@@ -65,7 +65,7 @@ $ rails generate model User name:string email:string
       create db/migrate/[timestamp]_create_users.rb
       create app/models/user.rb
       invoke rspec
-      create spec/models/user_spec.rb
+      create   spec/models/user_spec.rb
 ```
 
 （注意，和生成控制器的命令习惯不同，模型的名字是单数：控制器是 Users，而模型是 User。）我们提供了可选的参数 `name:string` 和 `email:string`，告诉 Rails 我们需要的两个属性是什么，以及各自的类型（两个都是字符串）。你可以把这两个参数与代码 3.4 和代码 5.28 中的动作名称对比一下，看看有什么不同。
