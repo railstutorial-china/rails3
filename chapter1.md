@@ -159,7 +159,7 @@ C:\Sites\sample_app
 
 <h4>IDE</h4>
 
-Rails 并不缺乏 IDE，[RadRails](http://www.aptana.com/rails/)、[RubyMine](http://www.jetbrains.com/ruby/index.html) 和 [3rd Rails](http://www.codegear.com/products/3rdrail) 都是。我听说 RubyMine 不错，一个读者（David Loeffler）还总结了一篇文章讲解[如何结合本书使用 RubyMine](https://github.com/perfectionist/sample_project/wiki) <sup>[7](#fn-7)</sup>。
+Rails 并不缺乏 IDE，[RadRails](http://www.aptana.com/rails/)、[RubyMine](http://www.jetbrains.com/ruby/index.html) 和 [3rd Rails](http://www.codegear.com/products/3rdrail) 都是。我听说 RubyMine 不错，一个读者（David Loeffler）还总结了一篇文章讲解[如何结合本书使用 RubyMine](https://github.com/perfectionist/sample_project/wiki) <sup>[7](#fn-7)</sup>。如果你习惯使用 IDE，我建议你把上面提到的几个全都试一下，找到最符合自己要求的一款。
 
 <h4>文本编辑器和命令行</h4>
 
