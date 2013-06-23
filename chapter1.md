@@ -91,7 +91,7 @@ C:\Sites> echo "hello, world"
 hello, world
 ```
 
-在 Unix 系统中，一些命令要使用 `sudo`（超级用户的工作，“substitute user do”）执行。默认情况下，使用 `sudo` 执行的命令是以管理员的身份执行的，这样就能访问普通用户无法访问的文件和文件夹了。例如 [1.2.2 节](#sec-1-2-2)中的一个例子：
+在 Unix 系统中，一些命令要使用 `sudo`（超级用户的工作，“substitute user do”）执行。<sup>[6](#fn-6)</sup>默认情况下，使用 `sudo` 执行的命令是以管理员的身份执行的，这样就能访问普通用户无法访问的文件和文件夹了。例如 [1.2.2 节](#sec-1-2-2)中的一个例子：
 
 ```sh
 sudo ruby setup.rb
@@ -143,7 +143,7 @@ C:\Sites\sample_app
 
 本书经常需要显示一些来自其他程序（命令行，版本控制系统，Ruby 程序等）的输出，因为系统之间存在差异，你所得到的输出结果可能和本书中的不同，但是无需担心。
 
-你在使用某些命令时可能会导致一些错误的发生，我不会一一列举各个错误的解决方法，你可以自行通过 Google 搜索解决。如果你在学习本书的过程中遇到了问题，我建议你看一下[本书帮助页面](http://railstutorial.org/help) <sup>[6](#fn-6)</sup> 中列出的资源。
+你在使用某些命令时可能会导致一些错误的发生，我不会一一列举各个错误的解决方法，你可以自行通过 Google 搜索解决。如果你在学习本书的过程中遇到了问题，我建议你看一下[本书帮助页面](http://railstutorial.org/help) <sup>[7](#fn-7)</sup> 中列出的资源。
 
 <h2 id="sec-1-2">1.2 搭建环境</h2>
 
@@ -159,16 +159,16 @@ C:\Sites\sample_app
 
 <h4>IDE</h4>
 
-Rails 并不缺乏 IDE，[RadRails](http://www.aptana.com/rails/)、[RubyMine](http://www.jetbrains.com/ruby/index.html) 和 [3rd Rails](http://www.codegear.com/products/3rdrail) 都是。我听说 RubyMine 不错，一个读者（David Loeffler）还总结了一篇文章讲解[如何结合本书使用 RubyMine](https://github.com/perfectionist/sample_project/wiki) <sup>[7](#fn-7)</sup>。如果你习惯使用 IDE，我建议你把上面提到的几个全都试一下，找到最符合自己要求的一款。
+Rails 并不缺乏 IDE，[RadRails](http://www.aptana.com/rails/)、[RubyMine](http://www.jetbrains.com/ruby/index.html) 和 [3rd Rails](http://www.codegear.com/products/3rdrail) 都是。我听说 RubyMine 不错，一个读者（David Loeffler）还总结了一篇文章讲解[如何结合本书使用 RubyMine](https://github.com/perfectionist/sample_project/wiki) <sup>[8](#fn-8)</sup>。如果你习惯使用 IDE，我建议你把上面提到的几个全都试一下，找到最符合自己要求的一款。
 
 <h4>文本编辑器和命令行</h4>
 
 较之 IDE，我更喜欢使用文本编辑器编辑文本，使用命令行执行命令（如图 1.1）。如何组合取决于你的喜好和所用的平台。
 
-- **文本编辑器：**我推荐使用 [Sublime Text 2](http://www.sublimetext.com/2)，这是一个跨平台支持的文本编辑器，写作本书时还处于 Beta 测试阶段，即便如此还是被认为是异常强大的编辑器。Sublime Text 深受 [Textmate](http://macromates.com/) 的影响，它能兼容大多数 Textmate 的定制功能，例如代码片段和配色方案。（Textmate 只可在 OS X 中使用，如果你使用 Mac 的话，它仍然是一个很好的选择。）另外一个很好的选择是 [Vim](http://www.vim.org/) <sup>[8](#fn-8)</sup>，它有针对各种主要平台的版本。Sublime Text 需要付费，而 Vim 则是免费的。二者都是界内人士普遍使用的编辑器，但就我的经验而言，Sublime Text 对初学者更友好。
+- **文本编辑器：**我推荐使用 [Sublime Text 2](http://www.sublimetext.com/2)，这是一个跨平台支持的文本编辑器，写作本书时还处于 Beta 测试阶段，即便如此还是被认为是异常强大的编辑器。Sublime Text 深受 [Textmate](http://macromates.com/) 的影响，它能兼容大多数 Textmate 的定制功能，例如代码片段和配色方案。（Textmate 只可在 OS X 中使用，如果你使用 Mac 的话，它仍然是一个很好的选择。）另外一个很好的选择是 [Vim](http://www.vim.org/) <sup>[9](#fn-9)</sup>，它有针对各种主要平台的版本。Sublime Text 需要付费，而 Vim 则是免费的。二者都是界内人士普遍使用的编辑器，但就我的经验而言，Sublime Text 对初学者更友好。
 - **终端（命令行）：**OS X 系统中我推荐使用 [iTerm](http://iterm.sourceforge.net/) 或是内置的终端程序。Linux 系统默认的终端就很好。在 Windows 中，很多用户选择在虚拟机中运行 Linux 来开发 Rails 程序，那么终端就使用默认的好了。如果你是在纯 Windows 系统中开发，我推荐使用 [Rails Installer](http://railsinstaller.org/) 中附带的终端。
 
-如果你决定使用 Sublime Text，可以参照[针对本书的安装说明](https://github.com/mhartl/rails_tutorial_sublime_text) <sup>[9](#fn-9)</sup>来安装。
+如果你决定使用 Sublime Text，可以参照[针对本书的安装说明](https://github.com/mhartl/rails_tutorial_sublime_text) <sup>[10](#fn-10)</sup>来安装。
 
 ![figure 1.1](assets/images/figures/editor_shell.png)
 
@@ -213,9 +213,9 @@ ruby 1.9.3
 
 这个命令会显示 Ruby 的版本。Rails 3 需要使用 Ruby 1.8.7 或以上的版本，但最好是 1.9.x 系列。本教程假设多数的读者使用的是 Ruby 1.9.2 或 1.9.3，不过 Ruby 1.8.7 应该也可以用（[第四章](chapter4.html)中会介绍，这个版本和最新版之间有个语法差异，而且也会导致输出有细微的差别）。
 
-如果你使用的是 OS X 或者 Linux，在安装 Ruby 时我强烈建议使用 Ruby 版本管理工具 [RVM](http://rvm.io/)，它允许你在同一台电脑上安装并管理多个 Ruby 版本。（在 Windows 中可以使用 [Pik](http://github.com/vertiginous/pik)）如果你希望在同一台电脑中运行不同版本的 Ruby 或 Rails 就需要它了。如果你在使用 RVM 时遇到什么问题的话，可以在 RVM 的 IRC 频道（[freenode.net 上的 #rvm](http://webchat.freenode.net/?channels=rvm)）中询问它的开发者 Wayne E. Seguin。<sup>[10](#fn-10)</sup>如果你使用的是 Linux，我推荐你阅读 Sudobits 博客中的《[如何在 Ubuntu 中安装 Ruby on Rails](http://blog.sudobits.com/2012/05/02/how-to-install-ruby-on-rails-in-ubuntu-12-04-lts/)》一文。
+如果你使用的是 OS X 或者 Linux，在安装 Ruby 时我强烈建议使用 Ruby 版本管理工具 [RVM](http://rvm.io/)，它允许你在同一台电脑上安装并管理多个 Ruby 版本。（在 Windows 中可以使用 [Pik](http://github.com/vertiginous/pik)）如果你希望在同一台电脑中运行不同版本的 Ruby 或 Rails 就需要它了。如果你在使用 RVM 时遇到什么问题的话，可以在 RVM 的 IRC 频道（[freenode.net 上的 #rvm](http://webchat.freenode.net/?channels=rvm)）中询问它的开发者 Wayne E. Seguin。<sup>[11](#fn-11)</sup>如果你使用的是 Linux，我推荐你阅读 Sudobits 博客中的《[如何在 Ubuntu 中安装 Ruby on Rails](http://blog.sudobits.com/2012/05/02/how-to-install-ruby-on-rails-in-ubuntu-12-04-lts/)》一文。
 
-[安装 RVM](http://rvm.io/rvm/install/) 后，你可以按照下面的方式安装 Ruby：<sup>[11](#fn-11)</sup>
+[安装 RVM](http://rvm.io/rvm/install/) 后，你可以按照下面的方式安装 Ruby：<sup>[12](#fn-12)</sup>
 
 ```sh
 $ rvm get head && rvm reload
@@ -225,7 +225,7 @@ $ rvm install 1.9.3
 
 命令的第一行会更新并重新加载 RVM，这是个好习惯，因为 RVM 经常会更新。第二行命令安装 Ruby 1.9.3。然后会用花一些时间下载和编译，所以如果看似没反应了也不要担心。
 
-一些 OS X 用户可能会因为没有 `autoconf` 执行文件而麻烦一些，不过你可以安装 [Homebrew](http://mxcl.github.com/homebrew/) <sup>[12](#fn-12)</sup>（OS X 系统中的包管理程序），然后执行以下命令：
+一些 OS X 用户可能会因为没有 `autoconf` 执行文件而麻烦一些，不过你可以安装 [Homebrew](http://mxcl.github.com/homebrew/) <sup>[13](#fn-13)</sup>（OS X 系统中的包管理程序），然后执行以下命令：
 
 ```sh
 $ brew install automake
@@ -622,7 +622,7 @@ Fetching source index for https://rubygems.org/
 .
 ```
 
-如果你使用的是 OS X，得到一个错误信息提示缺少 Ruby 头文件（例如 `ruby.h`），那么你需要安装 Xcode。Xcode 是 OS X 安装盘中附带的开发者工具包，相对于安装整个工具包我更推荐你安装较小的 [Xcode 命令行工具包](https://developer.apple.com/downloads/) <sup>[13](#fn-13)</sup>。如果在安装 Nokogiri gem 时提示 libxslt 错误，重新安装 Ruby 试一下：
+如果你使用的是 OS X，得到一个错误信息提示缺少 Ruby 头文件（例如 `ruby.h`），那么你需要安装 Xcode。Xcode 是 OS X 安装盘中附带的开发者工具包，相对于安装整个工具包我更推荐你安装较小的 [Xcode 命令行工具包](https://developer.apple.com/downloads/) <sup>[14](#fn-14)</sup>。如果在安装 Nokogiri gem 时提示 libxslt 错误，重新安装 Ruby 试一下：
 
 ```sh
 $ rvm reinstall 1.9.3
@@ -633,7 +633,7 @@ $ bundle install
 
 <h3 id="sec-1-2-5">1.2.5 <code>rails server</code></h3>
 
-运行完 [1.2.3 节](#sec-1-2-3)中介绍的 `rails new` 和 [1.2.4 节](#sec-1-2-4) 中介绍的 `bundle install` 后我们的程序就可以运行了，但怎么运行呢？Rails 自带了一个命令行程序可以在开发电脑上运行一个本地服务器：<sup>[14](#fn-14)</sup>
+运行完 [1.2.3 节](#sec-1-2-3)中介绍的 `rails new` 和 [1.2.4 节](#sec-1-2-4) 中介绍的 `bundle install` 后我们的程序就可以运行了，但怎么运行呢？Rails 自带了一个命令行程序可以在开发电脑上运行一个本地服务器：<sup>[15](#fn-15)</sup>
 
 ```sh
 $ rails server
@@ -643,7 +643,7 @@ $ rails server
 => Ctrl-C to shutdown server
 ```
 
-（如果系统提示缺少 JavaScript 运行时，请浏览 [execjs 位于 GitHub 的页面](https://github.com/sstephenson/execjs)查看一些可选的运行时，我建议安装 [Node.js](http://nodejs.org/)。）上述代码的提示信息告诉我们这个应用程序在 `0.0.0.0` 地址的 3000<sup>[15](#fn-15)</sup> 端口运行。这个地址告诉系统监听这台电脑上的每一个可用的 IP 地址。一般来说，我们可以通过一个特殊的地址 `127.0.0.1` 来查看应用程序，或者也可以使用 `localhost`。通过 <http://localhost:3000> 查看结果，如图 1.3 所示。
+（如果系统提示缺少 JavaScript 运行时，请浏览 [execjs 位于 GitHub 的页面](https://github.com/sstephenson/execjs)查看一些可选的运行时，我建议安装 [Node.js](http://nodejs.org/)。）上述代码的提示信息告诉我们这个应用程序在 `0.0.0.0` 地址的 3000<sup>[16](#fn-16)</sup> 端口运行。这个地址告诉系统监听这台电脑上的每一个可用的 IP 地址。一般来说，我们可以通过一个特殊的地址 `127.0.0.1` 来查看应用程序，或者也可以使用 `localhost`。通过 <http://localhost:3000> 查看结果，如图 1.3 所示。
 
 ![riding_rails_31](assets/images/figures/riding_rails_31.png)
 
@@ -696,7 +696,7 @@ $ git config --global alias.co checkout
 
 本书中我基本上都会使用完整的 `checkout` 命令，防止你没有做以上的设置，但我自己都是使用 `git co`。
 
-最后，你还可以设置编辑 Git 提交信息时使用的编辑器。如果你使用的是图形界面的编辑器，例如 Sublime Text、TextMate、gVim 或 MacVim，要加上一个旗标确保编辑器会在终端中保持状态而不是立马结束命令：<sup>[16](#fn-16)</sup>
+最后，你还可以设置编辑 Git 提交信息时使用的编辑器。如果你使用的是图形界面的编辑器，例如 Sublime Text、TextMate、gVim 或 MacVim，要加上一个旗标确保编辑器会在终端中保持状态而不是立马结束命令：<sup>[17](#fn-17)</sup>
 
 ```sh
 $ git config --global core.editor "subl -w"
@@ -713,7 +713,7 @@ $ git init
 Initialized empty Git repository in /Users/mhartl/rails_projects/first_app/.git/
 ```
 
-接下来要将项目的文件添加到仓库中。不过有一点要说明一下：Git 默认会跟踪所有文件的变化，但是有些文件我们并不想跟踪。例如，Rails 会创建一些日志文件记录应用程序的动作，这些文件经常变化，我们并不需要版本控制系统跟踪这些文件。Git 有忽略文件的机制：在应用程序的根目录创建一个名为 `.gitignore` 的文件，然后写入一些规则告诉 Git 要忽略哪些文件即可。<sup>[17](#fn-17)</sup>
+接下来要将项目的文件添加到仓库中。不过有一点要说明一下：Git 默认会跟踪所有文件的变化，但是有些文件我们并不想跟踪。例如，Rails 会创建一些日志文件记录应用程序的动作，这些文件经常变化，我们并不需要版本控制系统跟踪这些文件。Git 有忽略文件的机制：在应用程序的根目录创建一个名为 `.gitignore` 的文件，然后写入一些规则告诉 Git 要忽略哪些文件即可。<sup>[18](#fn-18)</sup>
 
 看一下前面的表格 1.1，`rails` 命令默认会在应用程序的根目录创建 `.gitignore` 文件，其内容如代码 1.6 所示。
 
@@ -771,7 +771,7 @@ doc/
 $ git add .
 ```
 
-这里的点号（.）代表当前目录，Git 会自动的将所有的文件，包括子目录中的文件添加到 Git 中。这个命令会将项目的文件添加到暂存区域（staging area），这个区域包含未提交的改动。你可以使用 `status` 命令查看暂存区域有哪些文件：<sup>[18](#fn-18)</sup>
+这里的点号（.）代表当前目录，Git 会自动的将所有的文件，包括子目录中的文件添加到 Git 中。这个命令会将项目的文件添加到暂存区域（staging area），这个区域包含未提交的改动。你可以使用 `status` 命令查看暂存区域有哪些文件：<sup>[19](#fn-19)</sup>
 
 ```sh
 $ git status
@@ -913,7 +913,7 @@ master
 
 第二个命令，`git branch`，会将本地所有的分支列出来，分支名前面的星号（`*`）指明当前所在的分支。注意，`git checkout -b modify-README` 会创建一个新分支，然后切换到这个分支，`modify-README` 前面的星号证明了这一点。（如果你在 [1.3 节](#sec-1-3)中设置了别名 `co`，那么你就要使用 `git co -b modify-README` 了。）
 
-分支的唯一价值是在多个开发人员协同开发一个项目时使开发的过程更明了，<sup>[19](#fn-19)</sup>不过对只有一个开发者的项目（比如本教程）也有用。一般而言，主分支是和从分支隔离开的，所以即便我们搞砸了也只需切换回到主分支并删除从分支来丢掉改动。在本节末尾我们会看到怎么做。
+分支的唯一价值是在多个开发人员协同开发一个项目时使开发的过程更明了，<sup>[20](#fn-20)</sup>不过对只有一个开发者的项目（比如本教程）也有用。一般而言，主分支是和从分支隔离开的，所以即便我们搞砸了也只需切换回到主分支并删除从分支来丢掉改动。在本节末尾我们会看到怎么做。
 
 顺便说一下，对于较小的改动我一般不会动用新分支，这里是对好的习惯做一个演示。
 
@@ -1027,11 +1027,11 @@ $ git push
 
 <h2 id="sec-1-4">1.4 部署</h2>
 
-即使现在还处在早期阶段，我们还是要将我们（没什么内容）的 Rails 应用程序部署到生产环境。这一步是可选的，不过在开发过程中尽早、频繁的部署可以尽早的发现开发中的问题。在开发环境中极力解决问题之后再部署,等到发布日期到来时经常会导致严重的问题。<sup>[20](#fn-20)</sup>
+即使现在还处在早期阶段，我们还是要将我们（没什么内容）的 Rails 应用程序部署到生产环境。这一步是可选的，不过在开发过程中尽早、频繁的部署可以尽早的发现开发中的问题。在开发环境中极力解决问题之后再部署,等到发布日期到来时经常会导致严重的问题。<sup>[21](#fn-21)</sup>
 
-过去部署 Rails 应用程序是很痛苦的事，但最近几年 Rails 开发群体不断的成熟，现在有很多好的解决方案了。这些方案包括运行 [Phusion Passenger](http://www.modrails.com/)（Apache 和 Nginx<sup>[21](#fn-21)</sup> 网络服务器的一个模块）的共享主机或私有虚拟服务器，[Engine Yard](http://engineyard.com/) 和 [Rails Machine](http://railsmachine.com/) 这种提供全方位部署服务的公司，[Engine Yard Cloud](http://cloud.engineyard.com/) 和 [Heroku](http://heroku.com/) 这种云部署服务。
+过去部署 Rails 应用程序是很痛苦的事，但最近几年 Rails 开发群体不断的成熟，现在有很多好的解决方案了。这些方案包括运行 [Phusion Passenger](http://www.modrails.com/)（Apache 和 Nginx<sup>[22](#fn-22)</sup> 网络服务器的一个模块）的共享主机或私有虚拟服务器，[Engine Yard](http://engineyard.com/) 和 [Rails Machine](http://railsmachine.com/) 这种提供全方位部署服务的公司，[Engine Yard Cloud](http://cloud.engineyard.com/) 和 [Heroku](http://heroku.com/) 这种云部署服务。
 
-我最喜欢的部署方案是 Heroku，这是一个特别针对 Rails 和其他 Ruby Web 应用程序<sup>[22](#fn-22)</sup>的托管平台。Heroku 让 Rails 应用程序的部署变得异常简单，只要你的源码纳入了 Git 版本控制系统就好。（这也是为什么你要按照 [1.3 节](#sec-1-3) 中介绍的步骤安装 Git 的原因，如果你还没有安装就赶快安装吧。）本节下面的内容就是介绍如何将我们的第一个应用程序部署到 Heroku。
+我最喜欢的部署方案是 Heroku，这是一个特别针对 Rails 和其他 Ruby Web 应用程序<sup>[23](#fn-23)</sup>的托管平台。Heroku 让 Rails 应用程序的部署变得异常简单，只要你的源码纳入了 Git 版本控制系统就好。（这也是为什么你要按照 [1.3 节](#sec-1-3) 中介绍的步骤安装 Git 的原因，如果你还没有安装就赶快安装吧。）本节下面的内容就是介绍如何将我们的第一个应用程序部署到 Heroku。
 
 <h3 id="sec-1-4-1">1.4.1 搭建 Heroku 部署环境</h3>
 
@@ -1129,6 +1129,7 @@ jhyicevg.heroku.com
 1. <http://railsforzombies.org/>
 1. <http://railstutorial.org/screencasts>
 1. 阅读本书时你会发现内部章节之间的链接很有用，你可以查看引用的内容然后快速的回到之前的位置。在浏览器中阅读时这种操作很简单，直接点击浏览器的后退按钮就可以了，不过 Adobe Reader 和 OS X 的预览程序也为 PDF 提供了这种功能。在 Reader 中，在文档中点击鼠标右键，然后选择“上一个视图”就可以返回了。在预览程序中要使用“浏览（Go）”菜单：浏览->返回（Back）。
+1. 很多人都错误地认为 `sudo` 的全称是“superuser do”，因为它已超级用户（root）的身份执行命令。其实，`sudo` 结合了 `su` 命令和英语单词“do”，而 `su` 的全称是“substitute user”，不信你可以执行 `man su` 命令验证一下。
 1. <http://railstutorial.org/help>
 1. <https://github.com/perfectionist/sample_project/wiki>
 1. vi 编辑器是 Unix 中古老而强大的强力工具，Vim 是 vi 的增强版（vi improved）。
