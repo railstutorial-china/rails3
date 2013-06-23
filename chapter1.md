@@ -168,7 +168,7 @@ Rails 并不缺乏 IDE，[RadRails](http://www.aptana.com/rails/)、[RubyMine](h
 - **文本编辑器：**我推荐使用 [Sublime Text 2](http://www.sublimetext.com/2)，这是一个跨平台支持的文本编辑器，写作本书时还处于 Beta 测试阶段，即便如此还是被认为是异常强大的编辑器。Sublime Text 深受 [Textmate](http://macromates.com/) 的影响，它能兼容大多数 Textmate 的定制功能，例如代码片段和配色方案。（Textmate 只可在 OS X 中使用，如果你使用 Mac 的话，它仍然是一个很好的选择。）另外一个很好的选择是 [Vim](http://www.vim.org/) <sup>[9](#fn-9)</sup>，它有针对各种主要平台的版本。Sublime Text 需要付费，而 Vim 则是免费的。二者都是界内人士普遍使用的编辑器，但就我的经验而言，Sublime Text 对初学者更友好。
 - **终端（命令行）：**OS X 系统中我推荐使用 [iTerm](http://iterm.sourceforge.net/) 或是内置的终端程序。Linux 系统默认的终端就很好。在 Windows 中，很多用户选择在虚拟机中运行 Linux 来开发 Rails 程序，那么终端就使用默认的好了。如果你是在纯 Windows 系统中开发，我推荐使用 [Rails Installer](http://railsinstaller.org/) 中附带的终端。
 
-如果你决定使用 Sublime Text，可以参照[针对本书的安装说明](https://github.com/mhartl/rails_tutorial_sublime_text) <sup>[10](#fn-10)</sup>来安装。
+如果你决定使用 Sublime Text，可以参照[针对本书的安装说明](https://github.com/mhartl/rails_tutorial_sublime_text) <sup>[10](#fn-10)</sup>来安装。（这些设置可能有些繁琐，且易于出错，所以我只推荐给高级用户使用。即便不做这些设置，Sublime Text 也是编写 Rails 应用程序的绝佳工具。）
 
 ![figure 1.1](assets/images/figures/editor_shell.png)
 
