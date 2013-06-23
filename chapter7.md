@@ -852,7 +852,7 @@ $ bundle exec rspec spec/
 生成的 HTML 是一个有标号（label）的文本字段，可以用来设定 User 模型的 `name` 属性。（[7.2.3 节](#sec-7-2-3)会看到生成的 HTML）看过生成的 HTML 才能理解为什么字段可以设定属性。在此之前，还有个问题要解决，因为没有定义 `@user` 变量，页面无法显示。和其他未定义的实例变量一样，`@user` 的值现在是 `nil`。所以如果运行测试的话，会看到针对注册页面结构的测试（检测 `h1` 和 `title` 的内容）是失败的：
 
 ```sh
-$ bundle exec rspec spec/requests/user pages spec.rb -e "signup page"
+$ bundle exec rspec spec/requests/user_pages_spec.rb -e "signup page"
 ```
 
 （上述命令中的 `-e` 参数指定只运行描述文本包含“signup page”字符串的测试用例。如果改成“signup”，则会运行代码 7.16 中的所有测试。）
@@ -875,7 +875,7 @@ end
 定义 `@user` 变量后，注册页面的测试就可以通过了：
 
 ```sh
-$ bundle exec rspec spec/requests/user pages spec.rb -e "signup page"
+$ bundle exec rspec spec/requests/user_pages_spec.rb -e "signup page"
 ```
 
 再添加代码 7.19 中的样式，表单的效果如图 7.12 所示。注意，我们再次用到了代码 7.2 中的 `box-sizing` 这个 mixin。
