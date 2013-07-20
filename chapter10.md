@@ -1883,8 +1883,8 @@ end
 ```
 
 <div class="navigation">
-  <a class="prev_page" href="chapter9.html">&laquo; 第九章 更新、显示和删除用户</a>
-  <a class="next_page" href="chapter11.html">第十一章 关注用户 &raquo;</a>
+  <a class="prev_page" href="{{ site.url }}/chapter9.html">&laquo; 第九章 更新、显示和删除用户</a>
+  <a class="next_page" href="{{ site.url }}/chapter11.html">第十一章 关注用户 &raquo;</a>
 </div>
 
 1. 严格来说，我们在[第八章](chapter8.html)中是把 session 当做资源来处理的，不过 session 不会像 Users 和 Microposts 资源那样被存入数据库。

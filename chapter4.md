@@ -1285,8 +1285,8 @@ $ git commit -m "Add a full_title helper"
 ```
 
 <div class="navigation">
-  <a class="prev_page" href="chapter3.html">&laquo; 第三章 基本静态的页面</a>
-  <a class="next_page" href="chapter5.html">第五章 完善布局 &raquo;</a>
+  <a class="prev_page" href="{{ site.url }}/chapter3.html">&laquo; 第三章 基本静态的页面</a>
+  <a class="next_page" href="{{ site.url }}/chapter5.html">第五章 完善布局 &raquo;</a>
 </div>
 
 1. 如果帮助函数是针对某个特定控制器的，你应该把它放进该控制器相应的帮助文件中。例如，为 StaticPages 控制器创建的帮助函数一般放在 `app/helper/static_pages_helper.rb` 中。在这个例子中，我们会把 `full_title` 这个帮助函数用在网站内所有的网页中，针对这种情况 Rails 提供了一个特别的文件：`app/helper/application_helper.rb`。

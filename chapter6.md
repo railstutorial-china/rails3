@@ -1573,8 +1573,8 @@ end
 ```
 
 <div class="navigation">
-  <a class="prev_page" href="chapter5.html">&laquo; 第五章 完善布局</a>
-  <a class="next_page" href="chapter7.html">第七章 用户注册 &raquo;</a>
+  <a class="prev_page" href="{{ site.url }}/chapter5.html">&laquo; 第五章 完善布局</a>
+  <a class="next_page" href="{{ site.url }}/chapter7.html">第七章 用户注册 &raquo;</a>
 </div>
 
 1. Active Record 这个名字来自“Active Record 模式”，出自 Martin Fowler 的《[企业应用架构模式](http://book.douban.com/subject/4826290/)》一书。

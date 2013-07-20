@@ -1898,7 +1898,7 @@ end
 ```
 
 <div class="navigation">
-  <a class="prev_page" href="chapter10.html">&laquo; 第十章 用户的微博</a>
+  <a class="prev_page" href="{{ site.url }}/chapter10.html">&laquo; 第十章 用户的微博</a>
 </div>
 
 1. 构思图中的头像来自 <http://www.flickr.com/photos/john_lustig/2518452221> 和 <http://www.flickr.com/photos/30775272@N05/2884963755>

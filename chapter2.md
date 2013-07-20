@@ -852,8 +852,8 @@ $ heroku run rake db:migrate
 本书后续的内容会建立在这些好的部分之上，然后改善有缺陷的部分。
 
 <div class="navigation">
-	<a class="prev_page" href="chapter1.html">&laquo; 第一章 从零到部署</a>
-	<a class="next_page" href="chapter3.html">第三章 基本静态的页面 &raquo;</a>
+	<a class="prev_page" href="{{ site.url }}/chapter1.html">&laquo; 第一章 从零到部署</a>
+	<a class="next_page" href="{{ site.url }}/chapter3.html">第三章 基本静态的页面 &raquo;</a>
 </div>
 
 1. 如果要实现内容更长的文章，例如一篇常规博客中的文章，应该将字符串类型（`string`）换成文本类型（`text`）；

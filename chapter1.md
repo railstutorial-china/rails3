@@ -1120,8 +1120,8 @@ jhyicevg.heroku.com
 <p class="center">我正在阅读 @railstutorial 学习 Ruby on Rails！ http://railstutorial.org/</p>
 
 <div class="navigation">
-  <a class="prev_page" href="foreword.html">&laquo; 序</a>
-	<a class="next_page" href="chapter2.html">第二章 演示程序 &raquo;</a>
+  <a class="prev_page" href="{{ site.url }}/foreword.html">&laquo; 序</a>
+	<a class="next_page" href="{{ site.url }}/chapter2.html">第二章 演示程序 &raquo;</a>
 </div>
 
 1. URI 是统一资源标识符（Uniform Resources Identifier）的简称，较少使用的 URL 是统一资源定位符（Uniform Resource Locator）的简称。在实际使用中，URI 一般和浏览器地址栏中的内容一样。

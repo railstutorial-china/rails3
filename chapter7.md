@@ -1564,8 +1564,8 @@ en:
 ```
 
 <div class="navigation">
-  <a class="prev_page" href="chapter6.html">&laquo; 第六章 用户模型</a>
-  <a class="next_page" href="chapter8.html">第八章 登录和退出 &raquo;</a>
+  <a class="prev_page" href="{{ site.url }}/chapter6.html">&laquo; 第六章 用户模型</a>
+  <a class="next_page" href="{{ site.url }}/chapter8.html">第八章 登录和退出 &raquo;</a>
 </div>
 
 1. [Mockingbird](http://gomockingbird.com/) 不支持插入额外的图片，图 7.1 中的图片是我使用 [Adobe Fireworks](http://www.adobe.com/products/fireworks/) 加上的。

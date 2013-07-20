@@ -1671,8 +1671,8 @@ $ heroku run console
 2. 参照 [8.3.3 节](#sec-8-3-3)中的示例，遍览用户和身份验证相关的集成测试，在 `spec/support/utilities.rb` 中定义帮助函数，解耦测试和具体实现。附加题：把这些帮助方法放到不同的文件和模块中，然后再引入相应的模块。
 
 <div class="navigation">
-  <a class="prev_page" href="chapter7.html">&laquo; 第七章 用户注册</a>
-  <a class="next_page" href="chapter9.html">第九章 更新、显示和删除用户 &raquo;</a>
+  <a class="prev_page" href="{{ site.url }}/chapter7.html">&laquo; 第七章 用户注册</a>
+  <a class="next_page" href="{{ site.url }}/chapter9.html">第九章 更新、显示和删除用户 &raquo;</a>
 </div>
 
 1. 另外一个常见的 session 处理方式是，在一定时间之后失效。这种方式特别适合包含敏感信息的网站，例如银行和交易账户。

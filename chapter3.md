@@ -1719,8 +1719,8 @@ $ git clone https://github.com/maltize/sublime-text-2-ruby-tests.git RubyTest
 即使你可以在 Sublime Text 中运行测试，有时我还是会选择使用 Guard。以上就是我要介绍的我经常使用的 TDD 技术。
 
 <div class="navigation">
-  <a class="prev_page" href="chapter2.html">&laquo; 第二章 演示程序</a>
-  <a class="next_page" href="chapter4.html">第四章 Rails 背后的 Ruby &raquo;</a>
+  <a class="prev_page" href="{{ site.url }}/chapter2.html">&laquo; 第二章 演示程序</a>
+  <a class="next_page" href="{{ site.url }}/chapter4.html">第四章 Rails 背后的 Ruby &raquo;</a>
 </div>
 
 1. Webrat 的继任者，Capybara 是以世界上[最大的啮齿类动物](http://en.wikipedia.org/wiki/Capybara)命名的。

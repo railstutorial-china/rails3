@@ -1873,8 +1873,8 @@ include ApplicationHelper
 ```
 
 <div class="navigation">
-  <a class="prev_page" href="chapter4.html">&laquo; 第四章 Rails 背后的 Ruby</a>
-  <a class="next_page" href="chapter6.html">第六章 用户模型 &raquo;</a>
+  <a class="prev_page" href="{{ site.url }}/chapter4.html">&laquo; 第四章 Rails 背后的 Ruby</a>
+  <a class="next_page" href="{{ site.url }}/chapter6.html">第六章 用户模型 &raquo;</a>
 </div>
 
 1. 感谢读者 [Colm Tuite](https://twitter.com/colmtuite) 使用 Bootstrap 重写了本书原来的示例程序；
