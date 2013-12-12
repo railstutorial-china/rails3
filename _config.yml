@@ -1,5 +1,4 @@
 url: http://railstutorial-china.org/rails3
-auto: false
 pygments: true
 markdown: redcarpet
 exclude: ['README.md', 'railstutorial-china.sublime-project', 'railstutorial-china.sublime-workspace', 'Gemfile', 'Gemfile.lock', 'CONTRIBUTING.md']

@@ -15,25 +15,16 @@ layout: default
 		<dd>1.9.3</dd>
 		<dt>Rails：</dt>
 		<dd>3.2.13</dd>
-		<dt>售价：</dt>
-		<dd>$4.90</dd>
 		<dt>页数：</dt>
-		<dd>460</dd>
+		<dd>462</dd>
 		<dt>装帧：</dt>
 		<dd>电子书</dd>
 		<dt>格式：</dt>
-		<dd>PDF, ePub, Mobi, HTML</dd>
+		<dd>PDF, HTML</dd>
 	</dl>
 
 	<div class="buy">
-		<h3>购买电子书</h3>
-		<p><a class="btn" href="https://sellfy.com/p/qwyU/" title="购买电子书">购买电子书（$4.90）</a></p>
-		<ol class="notes">
-			<li>出售行为已获原作者许可；</li>
-			<li>只支持 Paypal 支付；</li>
-			<li>电子书包含三种格式：PDF、EPub 和 Mobi；</li>
-			<li>购买后，错误修正等更新免费获取（通过邮件通知），不再收费；</li>
-		</ol>
+		<p><a class="btn" href="https://sellfy.com/p/qwyU/" title="购买电子书">购买 Rails4 版电子书（$9.90）</a><br /><a class="btn info" href="http://vdisk.weibo.com/s/EdBuTXqJ7GRu" title="下载电子书">下载电子书（PDF）</a></p>
 	</div>
 
 </div>

@@ -624,27 +624,25 @@ a {
   margin: 30px 0;
 }
 a.btn {
-  border: 1px solid #DEA620;
+  border: 1px solid #F0AD4E;
   border-radius: 4px;
-  background: #FF0;
-  background-repeat: repeat-x;
-  background-image: -webkit-linear-gradient(top, #F4CF2D, #EDBF13);
-  background: -moz-linear-gradient(top, #F4CF2D 0%, #EDBF13 100%);
-  color: #444;
+  background-color: #EEA236;
+  color: #fff;
   line-height: 36px;
   padding: 5px 10px;
   text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255,255,0,.5);
-  -webkit-box-shadow: 0 2px 0 #AC7B2D;
-  -moz-box-shadow: 0 2px 0 #AC7B2D;
-  box-shadow: 0 2px 0 #AC7B2D;
 }
 a.btn:hover, a.btn:active {
-  background-image: -webkit-linear-gradient(top, #EDBF13, #F4CF2D);
-  background: -moz-linear-gradient(top, #EDBF13 0%, #F4CF2D 100%);
+  background-color: #ED9C28;
+  border-color: #D58512;
 }
-.buy .notes {
-  color: #888;
+a.btn.info {
+  background-color: #5BC0DE;
+  border-color: #46B8DA;
+}
+a.btn.info:hover, a.btn.info:active {
+  background-color: #39B3D7;
+  border-color: #269ABC;
 }
 
 .grid-2 {
