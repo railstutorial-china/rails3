@@ -192,7 +192,7 @@ Loading development environment
 
 <h3 id="sec-4-2-1">4.2.1 注释</h3>
 
-Ruby 中的注释以井号 `#`（也叫“Hask Mark”，或者更诗意的叫“散列字元”）开头，一直到行尾结束。Ruby 会忽略注释，但是注释对代码阅读者（包括代码的创作者）却很有用。在下面的代码中
+Ruby 中的注释以井号 `#`（也叫“Hash Mark”，或者更诗意的叫“散列字元”）开头，一直到行尾结束。Ruby 会忽略注释，但是注释对代码阅读者（包括代码的创作者）却很有用。在下面的代码中
 
 ```ruby
   # Returns the full title on a per-page basis.
